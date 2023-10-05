@@ -6,6 +6,11 @@ name: Build Container
 on:
   workflow_dispatch:
 
+# registry write permissions
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
