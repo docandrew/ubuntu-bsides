@@ -25,7 +25,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v3
       with:
-        images: ghcr.io/docandrew/ubuntu-bsides/ubuntu-bsides:latest
+        images: ghcr.io/docandrew/ubuntu-bsides:latest
     
     - name: Build and push
       uses: docker/build-push-action@v2
