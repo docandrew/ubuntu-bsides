@@ -37,5 +37,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ steps.meta.outputs.tags }}
+        tags: |
+          ${{ steps.meta.outputs.tags }}
+          ghcr.io/docandrew/ubuntu-bsides:latest
         labels: ${{ steps.meta.outputs.labels }}
